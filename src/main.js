@@ -1,5 +1,7 @@
-// Formspree endpoint comes from the VITE_FORMSPREE_ENDPOINT env var (see .env.example / README).
-const ENDPOINT = (import.meta.env.VITE_FORMSPREE_ENDPOINT || '').trim();
+// Arclo Client Testimonial Form on Formspree. The endpoint is a public URL (not a secret).
+// VITE_FORMSPREE_ENDPOINT can override it, e.g. to point a preview deploy at a test form.
+const DEFAULT_ENDPOINT = 'https://formspree.io/f/meaapdbr';
+const ENDPOINT = (import.meta.env.VITE_FORMSPREE_ENDPOINT || DEFAULT_ENDPOINT).trim();
 const MIN_TESTIMONIAL = 20;
 const RATING_LABELS = ['', 'Poor', 'Fair', 'Good', 'Very good', 'Excellent'];
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
