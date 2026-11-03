@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Share Your Feedback | Arclo</title>
+  <meta name="description" content="Tell us about your experience working with Arclo. Your feedback helps us improve." />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <meta name="theme-color" content="#081f3b" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="https://getarclo.com" class="wordmark" aria-label="Arclo home">
+        <svg class="wordmark__icon" viewBox="351 546 325 360" fill="currentColor" aria-hidden="true" focusable="false"><path d="M514,546 L630,700 L630,756 L514,624 L398,756 L398,700 Z M514,657 L677,818 L677,900 L514,720 L351,900 L351,818 Z M514,758 L613,846 L613,906 L514,828 L415,906 L415,846 Z"/></svg>Arclo
+      </a>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section id="form-view">
+      <div class="hero">
+        <h1>How Was Your Experience With Arclo?</h1>
+        <p class="lead">We appreciate you trusting Arclo with your business. Your feedback helps us improve and gives other business owners a better idea of what it's like working with us.</p>
+      </div>
+
+      <form id="review-form" class="card" novalidate>
+        <div class="field">
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" placeholder="John Smith" autocomplete="name" autocapitalize="words" required aria-describedby="name-error" />
+          <p class="error" id="name-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="business_name">Business Name</label>
+          <input id="business_name" name="business_name" type="text" placeholder="Smith Painting Company" autocomplete="organization" autocapitalize="words" required aria-describedby="business_name-error" />
+          <p class="error" id="business_name-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" inputmode="email" placeholder="john@example.com" autocomplete="email" autocapitalize="none" spellcheck="false" required aria-describedby="email-note email-error" />
+          <p class="note" id="email-note">Your email will never be displayed publicly.</p>
+          <p class="error" id="email-error" role="alert"></p>
+        </div>
+
+        <fieldset class="field rating" aria-describedby="rating-error">
+          <legend>How would you rate your experience with Arclo?</legend>
+          <div class="stars" id="stars">
+            <input type="radio" name="rating" id="star1" value="1" class="sr-only" /><label for="star1" title="1 star"><span class="sr-only">1 star</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5l-5.9 3.2 1.2-6.6L2.5 9.5l6.6-.9z"/></svg></label>
+            <input type="radio" name="rating" id="star2" value="2" class="sr-only" /><label for="star2" title="2 stars"><span class="sr-only">2 stars</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5l-5.9 3.2 1.2-6.6L2.5 9.5l6.6-.9z"/></svg></label>
+            <input type="radio" name="rating" id="star3" value="3" class="sr-only" /><label for="star3" title="3 stars"><span class="sr-only">3 stars</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5l-5.9 3.2 1.2-6.6L2.5 9.5l6.6-.9z"/></svg></label>
+            <input type="radio" name="rating" id="star4" value="4" class="sr-only" /><label for="star4" title="4 stars"><span class="sr-only">4 stars</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5l-5.9 3.2 1.2-6.6L2.5 9.5l6.6-.9z"/></svg></label>
+            <input type="radio" name="rating" id="star5" value="5" class="sr-only" /><label for="star5" title="5 stars"><span class="sr-only">5 stars</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5l-5.9 3.2 1.2-6.6L2.5 9.5l6.6-.9z"/></svg></label>
+            <span class="rating-text" id="rating-text" aria-live="polite"></span>
+          </div>
+          <p class="error" id="rating-error" role="alert"></p>
+        </fieldset>
+
+        <div class="field">
+          <label for="testimonial">What was your experience working with Arclo?</label>
+          <textarea id="testimonial" name="testimonial" rows="6" minlength="20" placeholder="Tell us about your experience, what you enjoyed, and how your new website has helped your business..." required aria-describedby="testimonial-note testimonial-error"></textarea>
+          <p class="note" id="testimonial-note">A few sentences are perfect!</p>
+          <p class="error" id="testimonial-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="business_results">Have you noticed any improvements since working with Arclo? <span class="optional">(optional)</span></label>
+          <textarea id="business_results" name="business_results" rows="4" placeholder="For example, more inquiries, a more professional online presence, easier customer communication, or anything else you've noticed..."></textarea>
+        </div>
+
+        <div class="field consent">
+          <input id="permission" name="permission" type="checkbox" />
+          <label for="permission">I give Arclo permission to publicly share my testimonial, rating, name, and business name on its website and marketing materials.</label>
+        </div>
+
+        <!-- Honeypot: hidden from people, catches basic bots -->
+        <div class="hp" aria-hidden="true"><label>Leave blank <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label></div>
+
+        <div id="form-error" class="banner" role="alert" hidden></div>
+
+        <button type="submit" id="submit" class="btn">
+          <span class="btn__label">Submit My Review</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+      </form>
+    </section>
+
+    <section id="success-view" class="card success" hidden tabindex="-1">
+      <div class="check" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+      </div>
+      <h2>Thank You for Your Feedback!</h2>
+      <p class="lead">We appreciate you taking the time to share your experience. Thank you for choosing Arclo!</p>
+      <a class="btn" href="https://getarclo.com">Visit Arclo</a>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>&copy; <span id="year"></span> Arclo &middot; <a href="https://getarclo.com">getarclo.com</a></p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
