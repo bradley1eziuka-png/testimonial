@@ -36,6 +36,7 @@ a { color: inherit; }
 
 .main { padding-block: clamp(1.75rem, 1rem + 3vw, 3.5rem) 2rem; }
 .hero { text-align: center; margin-bottom: clamp(1.5rem, 1rem + 2vw, 2.25rem); }
+.avatar { display: block; width: 72px; height: 72px; margin: 0 auto 1rem; border-radius: 50%; object-fit: cover; border: 3px solid var(--canvas); box-shadow: var(--shadow-md); }
 h1, h2 { font-family: var(--font-display); letter-spacing: -0.03em; line-height: 1.12; margin: 0; font-weight: 700; }
 h1 { font-size: clamp(1.9rem, 1.4rem + 2.2vw, 2.75rem); }
 h2 { font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.25rem); }
