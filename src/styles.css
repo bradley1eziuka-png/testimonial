@@ -36,7 +36,7 @@ a { color: inherit; }
 
 .main { padding-block: clamp(1.75rem, 1rem + 3vw, 3.5rem) 2rem; }
 .hero { text-align: center; margin-bottom: clamp(1.5rem, 1rem + 2vw, 2.25rem); }
-.avatar { display: block; width: 72px; height: 72px; margin: 0 auto 1rem; border-radius: 50%; object-fit: cover; border: 3px solid var(--canvas); box-shadow: var(--shadow-md); }
+.avatar { display: block; width: 180px; height: 180px; margin: 0 auto 1.25rem; border-radius: 50%; object-fit: cover; border: 4px solid var(--canvas); box-shadow: var(--shadow-lg); }
 h1, h2 { font-family: var(--font-display); letter-spacing: -0.03em; line-height: 1.12; margin: 0; font-weight: 700; }
 h1 { font-size: clamp(1.9rem, 1.4rem + 2.2vw, 2.75rem); }
 h2 { font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.25rem); }
@@ -112,6 +112,7 @@ input:focus-visible, textarea:focus-visible { outline: none; border-color: var(-
 .footer p { margin: 0; }
 
 @media (min-width: 640px) {
+  .avatar { width: 240px; height: 240px; }
   .btn { width: 100%; }
   .stars svg { width: 40px; height: 40px; }
 }
